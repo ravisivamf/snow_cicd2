@@ -1,2 +1,2 @@
 insert into demo_db.demo.hello_world
-values ('Guru','Raja',05, '2018-10-30');
+values ('Siva','Raja',10, '2013-07-14');
