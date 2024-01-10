@@ -42,6 +42,6 @@ jobs:
           pip install schemachange
 
           echo "Step 2: running schemachange"
-          schemachange -f $(GITHUB_WORKSPACE)/dbscripts -a $(SF_ACCOUNT) -u $(SF_USERNAME) -r $(SF_ROLE) -w $(SF_WAREHOUSE) -d $(SF_DATABASE) -c $(SF_DATABASE).SCHEMACHANGE.CHANGE_HISTORY --config-folder $(System.DefaultWorkingDirectory)/schemachangeconfigs/development --create-change-history-table
+          schemachange -f $(.github/workflows)/dbscripts -a $(SF_ACCOUNT) -u $(SF_USERNAME) -r $(SF_ROLE) -w $(SF_WAREHOUSE) -d $(SF_DATABASE) -c $(SF_DATABASE).SCHEMACHANGE.CHANGE_HISTORY --config-folder $(System.DefaultWorkingDirectory)/schemachangeconfigs/development --create-change-history-table
           env:
             SNOWFLAKE_PASSWORD: $(SF_PASSWORD)
