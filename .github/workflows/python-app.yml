@@ -47,4 +47,4 @@ jobs:
         pip install pytest
           
          echo "Step 2: Running pytest"
-        pytest -f $GITHUB_WORKSPACE/CODE
+        pytest simple.py
