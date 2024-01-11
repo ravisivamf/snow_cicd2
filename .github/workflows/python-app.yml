@@ -46,5 +46,6 @@ jobs:
         echo "Step 1: Installing pytest"
         pip install pytest
           
-         echo "Step 2: Running pytest"
-        pytest simple.py
+        echo "Step 2: Running pytest"
+        export pythonpaths = src
+        pytest 
