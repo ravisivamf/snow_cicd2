@@ -45,7 +45,6 @@ jobs:
         python --version
         echo "Step 1: Installing pytest"
         pip install pytest
-          
         echo "Step 2: Running pytest"
         export PYTHONPATH=src
         pytest
